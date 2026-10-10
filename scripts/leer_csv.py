@@ -4,4 +4,15 @@
 
 # TODO 1: importa pandas y carga data/ventas.csv en un DataFrame
 # TODO 2: imprime las dimensiones (filas, columnas) del DataFrame
-# TODO 3: imprime las primeras filas para revisar las columnas
+# TODO 3: imprime las primeras filas para revisar las columnas y los tipos de datos
+
+import pandas as pd
+ventas=pd.read_csv(r"C:\Users\USUARIO\Desktop\Universidad-EPN\4 TO SEMESTRE\Estadistica I\Labo1\IDSD422-lab1-lectura-datos\data\ventas.csv")
+
+print(ventas.head())
+#imprimir las dimensiones
+print ("dimensiones" , ventas.shape)
+#imprimir los tipos de columnas
+print("\nTipos por columnas")
+print(ventas.dtypes)
+
